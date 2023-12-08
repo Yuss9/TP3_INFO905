@@ -1,0 +1,15 @@
+# Environnement virtuel
+venv/
+
+# Dossiers à ignorer
+old_codes/
+fruits/
+
+# Fichiers spécifiques à ignorer
+fruits.zip
+
+# Autres fichiers générés par le système
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
