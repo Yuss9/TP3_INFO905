@@ -1,6 +1,9 @@
 # Environnement virtuel
 venv/
 
+
+.DS_Store
+
 # Dossiers à ignorer
 old_codes/
 fruits/
