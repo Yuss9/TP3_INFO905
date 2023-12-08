@@ -5,6 +5,13 @@
 
 Ce projet utilise le clustering K-Means pour classer des images de fruits.
 
+
+
+
+
+ Status de l'avancement : j'ai fini le TP
+
+
 ## Installation
 
 1. Assurez-vous d'avoir Python installé.
