@@ -15,6 +15,35 @@ Inertie: L'inertie est de 487739.66. Cela signifie que la somme des carrés des 
 
 Score Davies Bouldin: Le score est de 2.72. Un score Davies Bouldin plus bas est généralement souhaitable. Cependant, la qualité dépend du contexte spécifique de vos données. En général, si le score est proche de zéro, cela indique une meilleure séparation entre les clusters.
 
+# Rapport sur le TP : Classification de Fruits avec K-Means
 
+## Introduction
+Le présent TP vise à explorer l'application de l'algorithme K-Means pour la classification d'images de fruits. Nous avons suivi des étapes allant du téléchargement du jeu de données au prétraitement des images, à l'augmentation du jeu de données, à l'application de K-Means pour regrouper les fruits en clusters, et enfin, à l'évaluation de la qualité de la classification.
+
+## Étape 1 : Téléchargement du jeu de données
+Nous avons téléchargé l'ensemble de données "fruits.zip" et l'avons extrait localement. Cet ensemble de données contient des images de fruits dans différentes catégories.
+
+## Étape 2 : Chargement des images
+Un script Python utilise la bibliothèque Pillow pour charger les images du jeu de données dans un format adapté à scikit-learn, sous forme de matrices de pixels.
+
+## Étape 3 : Prétraitement des images
+Afin de simplifier le processus, toutes les images ont été redimensionnées à une taille fixe de 100x100 pixels, et les valeurs des pixels ont été normalisées.
+
+## Étape 4 : Augmentation du jeu de données
+Des techniques d'augmentation de données ont été appliquées pour générer de nouvelles variations des images. Cela inclut des transformations telles que la rotation, le changement d'échelle, le recadrage et le changement de luminosité.
+
+## Étape 5 : Application de K-Means
+L'algorithme K-Means a été appliqué sur les images prétraitées et augmentées pour regrouper les fruits en clusters. Nous avons choisi un nombre approprié de clusters (10 dans notre cas) et expérimenté avec différentes valeurs.
+
+## Étape 6 : Visualisation des clusters
+Matplotlib a été utilisé pour afficher quelques images de chaque cluster, permettant ainsi une évaluation visuelle de la qualité de la classification.
+
+## Étape 7 : Évaluation de la classification
+L'évaluation de la classification s'est faite en utilisant l'inertie, qui mesure la cohésion des clusters. Plus l'inertie est faible, plus les clusters sont cohérents. Nous avons également utilisé le score de Davies-Bouldin pour évaluer la séparation entre les clusters.
+
+## Résultats et Conclusions
+L'inertie obtenue fournit une indication de la qualité de la classification. Cependant, d'autres évaluations telles que la visualisation des clusters et le score de Davies-Bouldin peuvent fournir des informations complémentaires sur la cohérence et la séparation des clusters.
+
+Le code fourni accomplit les tâches spécifiées, et les résultats obtenus peuvent être analysés pour affiner la qualité de la classification. En répétant ces étapes avec un deuxième jeu de données ("fruits-vegetables.zip"), il est possible d'étendre l'analyse à un ensemble plus diversifié de fruits et légumes.
 
 
