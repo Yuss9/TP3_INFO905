@@ -35,6 +35,23 @@ Des techniques d'augmentation de données ont été appliquées pour générer d
 ## Étape 5 : Application de K-Means
 L'algorithme K-Means a été appliqué sur les images prétraitées et augmentées pour regrouper les fruits en clusters. Nous avons choisi un nombre approprié de clusters (10 dans notre cas) et expérimenté avec différentes valeurs.
 
+
+L'algorithme K-Means est une technique de clustering largement utilisée en apprentissage non supervisé. Son objectif principal est de regrouper des données similaires dans des ensembles appelés "clusters". Voici les principaux objectifs et applications de l'algorithme K-Means :
+
+1. **Clustering :** L'objectif principal de K-Means est de diviser un ensemble de données en groupes homogènes appelés clusters. Chaque cluster est caractérisé par un "centroid" représentatif, qui est le centre géométrique du groupe.
+
+2. **Segmentation de données :** K-Means est souvent utilisé pour segmenter un ensemble de données en groupes distincts en fonction de caractéristiques similaires. Par exemple, dans le domaine du marketing, il peut être utilisé pour segmenter les clients en groupes ayant des comportements d'achat similaires.
+
+3. **Réduction de dimension :** K-Means peut également être utilisé comme technique de réduction de dimension en attribuant à chaque donnée un label correspondant à son cluster. Cela peut être utile pour simplifier les données et accélérer les calculs ultérieurs.
+
+4. **Détection d'anomalies :** En observant la distribution des données, les anomalies peuvent souvent être identifiées comme des points qui ne s'alignent pas bien avec les clusters existants.
+
+5. **Compression d'image :** Dans le traitement d'image, K-Means peut être utilisé pour compresser une image en réduisant le nombre de couleurs tout en préservant les caractéristiques visuelles essentielles.
+
+6. **Initialisation d'autres algorithmes :** Les résultats de K-Means peuvent servir d'initialisation pour d'autres algorithmes d'apprentissage automatique, améliorant ainsi leur efficacité.
+
+Le fonctionnement de l'algorithme K-Means consiste à minimiser la somme des carrés des distances entre chaque point de données et le centroïde du cluster auquel il est assigné. Il alterne entre l'affectation des points au cluster le plus proche et la mise à jour des centroïdes en fonction des points assignés. Cette itération se poursuit jusqu'à ce que les affectations des points aux clusters ne changent plus significativement.
+
 ## Étape 6 : Visualisation des clusters
 Matplotlib a été utilisé pour afficher quelques images de chaque cluster, permettant ainsi une évaluation visuelle de la qualité de la classification.
 
